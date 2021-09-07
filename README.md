@@ -2,6 +2,8 @@
 
 Realizar una plataforma e-learning donde se puedan impartir cursos online similares a Udemy, Coursera o PluralSight.
 
+![High-level Overview Architecture](https://github.com/mlopez383/spring-boot-practice/blob/develop/misc/MicroserviceArchitecture.png?raw=true)
+
 ##Requirements
 A web application that allows us to perform the following operations:
 Sign Up - Sign In - Sign Out - User Configuration
