@@ -1,44 +1,44 @@
-#Project Statement
+# Project Statement
 
-Realizar una plataforma e-learning donde se puedan impartir cursos online similares a Udemy, Coursera o PluralSight.
+Create an e-learning platform with online courses similar to Udemy, Coursera or PluralSight.
 
 ![High-level Overview Architecture](https://github.com/mlopez383/spring-boot-practice/blob/develop/misc/MicroserviceArchitecture.png?raw=true)
 
-##Requirements
+## Requirements
 A web application that allows us to perform the following operations:
 Sign Up - Sign In - Sign Out - User Configuration
 1.The web application will have the following roles:
 
-**Administrator:** Es el rol responsable de la plataforma, con las siguientes funcionalidades:
-- Gestionar los  cursos (Listar,  agregar, modificar o eliminar un curso).
-- La opción  de  “Loguearse Como” y seleccionar cualquier usuario del sistema para navegar la plataforma como si fuese el mismo.
-- Envío de e-mail a un estudiante, a los estudiantes de un curso o bien a un instructor.
-- Puede editar su perfil personal.
-- Envío masivos de mensajes a diferentes roles de la plataforma, como ser a los instructores o estudiantes.
-- Como administrador del sitio, podrá ingresar a los foros y modificar o eliminar comentarios.   
-- Puede  dar  de  alta  cursos,  configurarlos  y también crear y asignar lecciones y  exámenes a los mismos.
+**Administrator:** The role is responsible for the platform, with the following functionalities:
+- Manage courses (list, add, modify or delete a course).
+- The option to "log in as" and choose any user of the system to navigate the platform as if it were the same.
+- Send email to a student, students in a course, or an instructor.
+- Edit his personal profile.
+- Send mass messages to different roles of the platform, such as instructors or students.
+- Enter to the forums and modify or delete comments.   
+- Register and configure courses, and also create and assign lessons and exams to the course.
 
-**Estudiante:** es  quien podrá  sumarse a un curso que tenga  disponible  y  gestionar  su  perfil.  El  mismo podrá:
-- Comenzar cualquier curso que tenga disponible en el catálogo de cursos.
-- Ver el grado de avance en los cursos que esté tomando.
-- Acceder  al  contenido  del  curso  que  el  instructor publique.
-- Realizar los cuestionarios que el instructor publique.
-- Acceder a sus certificados de cursos finalizados.
-- Modificar su perfil personal.
-- Podrá darle un puntaje al curso realizado.
-- Ver un reporte de los cursos realizados (listado con el nombre del curso, fecha de inicio y fecha de finalización).
-- Participar de un foro del curso que esté tomando con el instructor y compañeros de curso.
-- Enviar mensajes por medio de la plataforma.
+**Student:** He is able to join a course. He can: 
+- Start any available course.
+- See the progress of his courses.
+- Access the course content that the instructor publishes.
+- Take the questionnaires that the instructor publishes.
+- Access to his certificates of completed courses.
+- Modify his personal profile.
+- Give a score to a completed course.
+- See a report of the courses taken (list courses with the name of the course, start date and end date).
+- Participate in a forum of the course you are taking with the instructor and classmates.
+- Send messages through the platform.
 
-**Instructor:** es quien generará los contenidos del curso. El mismo podrá:
-- Modificar la información personal de su perfil.
-- Tendrá un dashboard general, donde podrá ver y acceder a editar los cursos que el mismo tiene.
-- Podrá ver desde el dashboard las últimas consultas recibidas por alumnos.
-- El alta del curso  se realizará mediante lecciones  que  quedarán asociadas  a un  contenido, por  ejemplo  “Cómo  redactar  emails  correctamente” sería  el título  de la lección y luego debería  de poder  cargar un  contenido de  texto con formato, asociarse fotos, videos,  tablas, links, etc.
-- Podrá  responder  mensajes  a  consultas  de alumnos  o realizar consultas  al administrador del sitio, por consultas técnicas, etc.
-- Puede dar de alta, modificar, eliminar preguntas de evaluación.
+**Instructor:** It is who will generate the contents of the course. He can:
+- Modify his personal profile.
+- Access to his dashboard, where he can edit his courses.
+- See his received queries by students.
+- The course registration will be done through lessons that will be associated with contents, photos, videos, tables, links , etc.
+- Answer messages to student inquiries or make inquiries to the administrator, for technical inquiries, etc.
+- Register, modify, and delete exam questions.
 
-##Create and publish course
+## Create and publish course
 3. The application allows users with the instructor role to create courses. The instructor must enter the following information to create a course:
 - Course name.
 - Description
@@ -61,5 +61,5 @@ Sign Up - Sign In - Sign Out - User Configuration
 
 7. The search result should show the courses that match the user's search.
 
-## Curso en Promoción
-8. El sistema contará con una característica llamada Curso en Promoción. La promoción consiste en que el curso más antiguo que esté activo en el sistema entra a promoción para los posibles estudiantes. La promoción consiste en que el usuario que acceda de primero al curso obtendrá un 50% de descuento. El sistema debe dar como máximo 10 minutos al usuario para registrarse en el curso. Si este tiempo pasa, el curso se libera y otro estudiante puede acceder a él. Para este feature específico, Ud debe utilizar programación concurrente. La opción Curso en Promoción sólo puede ser activada por el usuario administrador del sistema.
+## Promotion Course
+8. The system will have a feature called Promotion Course. The promotion consists in that the oldest and active course in the system enters in promotion for possible students. The promotion consists in that the user who accesses to the course first will get a 50% discount. The system must give the user a maximum of 10 minutes to enroll in. If this time passes, the course is released and another student can access it. For this specific feature, you must use concurrent programming. The Promotion Course option can only be activated by the administrator.
